@@ -1,0 +1,53 @@
+.verificationCode {
+  max-width: 324px;
+  margin: 0 auto;
+}
+
+.verificationCode ul.codeItems {
+  padding: 0;
+  display: flex;
+}
+
+.codeItems li {
+  list-style: none;
+  width: 20%;
+  padding: 2px;
+  text-align: center;
+}
+
+.codeItems li input::-webkit-outer-spin-button,
+.codeItems li input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.codeItems li input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.codeItems li input {
+  width: 100%;
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  outline: none;
+  transition: all ease 0.3s;
+}
+
+.codeItems li input[data-value=""] {
+  border: 1px solid #eaeaea;
+}
+
+.codeItems li input:not([data-value=""]) {
+  border: 1px solid #47464c;
+}
+
+.codeItems li input[data-value=""]:focus {
+  border: 1px solid #47464c;
+}
+
+.codeItems li input:not([data-value=""]):focus {
+  box-shadow: 0 0px 2px 1px #d0d0d0;
+}
